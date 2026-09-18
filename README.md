@@ -1,22 +1,13 @@
-The address is https://designspring.github.io/material-prompts/ once Pages
+# Material Prompts
 
-GitHub's setup guide: https://docs.github.com/en/pages/quickstart
+## Exploring Human–AI Interaction in Emerging Robotic Fabrication Contexts
 
-## Edit the site
+A half-day workshop for OzCHI 2026 exploring how AI might support human decision-making as robotic 3D printing processes unfold.
 
-- `index.html` contains all workshop text, programme entries, organiser profiles and application buttons.
-- `style.css` controls typography, colours and mobile layouts.
-- Both application buttons link to https://forms.cloud.microsoft/r/SnEC7xNbmc. Replace both URLs when changing the form.
-- The linked application form supplies the tentative date (22 November 2026), Adelaide University City East Campus location and Griffith contact email. Its date typo “206” has been interpreted as 2026, matching the conference year. The room remains **to be confirmed**. The application deadline (12 November 2026), notification timing (before 20 November 2026) and provisional programme come from the supplied Rev2 proposal.
-- Acceptance status is not asserted. Confirm event details with the organisers before changing these labels.
-- No custom domain is configured. `materialprompts.com` can be connected later after ownership and DNS access are confirmed.
+Through hands-on making, speculative role-play and a low-fidelity robotic 3D-printing enactment, participants will explore how people communicate intent, respond to unexpected material behaviour and negotiate AI assistance during fabrication.
 
-## Preview locally
+We welcome researchers, designers, makers and practitioners from HCI, design, architecture, robotics, creative practice and related fields. No prior experience with robotic 3D printing or AI systems is required.
 
-Open `index.html` in a browser, or run `python -m http.server 8000` in this folder and visit http://localhost:8000.
-
-## Content and design
-
-Workshop content is adapted from the organiser-provided *Material Prompts_Rev2.pdf* and *Supplementary workshop information_Rev2.pdf*. The original PDFs are not published by this repository.
-
-The layout takes inspiration from the supplied Designing through Becoming workshop site, with an original implementation and Material Prompts content. There are no copied photographs or third-party scripts.
+- [Workshop website](https://designspring.github.io/material-prompts/)
+- [Apply to participate](https://forms.cloud.microsoft/r/SnEC7xNbmc)
+- [Contact Anthony Franzè](mailto:a.franze@griffith.edu.au)
