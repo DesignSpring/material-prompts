@@ -1,12 +1,4 @@
-# Material Prompts — OzCHI 2026
-
-A responsive, accessible workshop website for **Material Prompts: Exploring Human–AI Interaction in Emerging Robotic Fabrication Contexts**. Built with plain HTML and CSS; no installation, build process or external libraries are needed.
-
-## Publish on GitHub Pages
-
-In this repository, open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, then **main** and **/(root)**, and save.
-
-The expected address is https://designspring.github.io/material-prompts/ once Pages is enabled and its deployment succeeds.
+The address is https://designspring.github.io/material-prompts/ once Pages
 
 GitHub's setup guide: https://docs.github.com/en/pages/quickstart
 
