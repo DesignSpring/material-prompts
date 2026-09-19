@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><title>Edit Material Prompts</title>
+  <link rel="icon" href="favicon.svg"><link rel="stylesheet" href="editor.css">
+  <script src="editor-data.js" defer></script><script src="editor.js" defer></script>
+</head>
+<body>
+  <header class="toolbar"><div><strong>Material Prompts</strong><span>Website editor</span></div><div class="actions"><button id="undo" disabled>Undo</button><button id="download" disabled>Download updated website</button></div></header>
+  <div class="notice">Edit your draft here, then download and upload the files to GitHub to publish. This editor cannot change the live site directly.</div>
+  <div id="draft-banner" class="draft-banner" hidden>A saved draft is available on this browser. <button id="restore">Restore draft</button><button id="discard">Discard draft</button></div>
+  <div class="workspace">
+    <aside class="controls" aria-label="Editing controls">
+      <label for="section">Choose what to edit</label>
+      <select id="section" disabled>
+        <option value="details">Dates, links &amp; page information</option><option value="hero">Main heading &amp; photo</option><option value="institution">University highlight</option><option value="about">About &amp; activities</option><option value="programme">Programme</option><option value="who">Who can take part</option><option value="organisers">Organisers</option><option value="participate">Participation</option><option value="acknowledgements">Acknowledgements</option><option value="links">All links &amp; buttons</option>
+      </select>
+      <div id="fields"><p>Loading your website…</p></div>
+      <details class="help"><summary>How do I publish my changes?</summary><ol><li>Click <strong>Download updated website</strong>.</li><li>Extract the downloaded ZIP.</li><li>Open <a href="https://github.com/DesignSpring/material-prompts" target="_blank" rel="noopener">your GitHub repository</a> in your usual browser.</li><li>Choose <strong>Add file → Upload files</strong>. Upload the extracted files and the <strong>assets</strong> folder, then commit the changes.</li><li>GitHub Pages will update after deployment. Reload the website to see your changes.</li></ol><p>Upload the editor files too, so the downloadable copy stays up to date. Your unpublished draft stays in this browser. Anyone can open this editor, but only someone with access to your GitHub repository can publish changes.</p></details>
+      <p id="status" role="status" aria-live="polite">Opening website…</p>
+    </aside>
+    <main class="preview-pane"><div class="preview-toolbar"><span>Live preview</span><div><button id="desktop" aria-pressed="true">Desktop</button><button id="mobile" aria-pressed="false">Mobile</button></div></div><div id="preview-stage"><iframe id="preview" title="Preview of your workshop website" sandbox="allow-same-origin"></iframe></div></main>
+  </div>
+</body>
+</html>
