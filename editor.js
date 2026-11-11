@@ -17,14 +17,14 @@
   function applyWorkshopUpdates(){
     // Migrate the previous workshop date in saved drafts without replacing other edits.
     site.querySelectorAll('.facts dd, .join-details dd').forEach(el=>{
-      if(el.textContent.trim()==='22 November 2026 (tentative)')el.textContent='Saturday 21 November 2026, 1–4 pm';
+      if(['22 November 2026 (tentative)','Saturday 21 November 2026, 1–4 pm'].includes(el.textContent.trim()))el.textContent='Saturday 21 November 2026, 1–4:30 pm';
     });
     const programme=site.querySelector('#programme');
     if(programme){
       programme.querySelectorAll('h2, .muted, th, td').forEach(el=>{
         if(el.matches('h2'))el.innerHTML=el.innerHTML.replace('A morning of','An afternoon of');
-        if(el.matches('.muted')&&el.textContent.includes('09:00–12:30'))el.textContent='1–4 pm · Activity timings to be confirmed';
-        const times={'09:00':'1 pm','09:20':'TBC','09:40':'TBC','10:30':'TBC','10:45':'TBC','11:45':'TBC','12:20':'TBC','12:30':'4 pm'};
+        if(el.matches('.muted')&&(el.textContent.includes('09:00–12:30')||el.textContent.includes('1–4 pm')))el.textContent='1–4:30 pm · Activity timings to be confirmed';
+        const times={'09:00':'1 pm','09:20':'TBC','09:40':'TBC','10:30':'TBC','10:45':'TBC','11:45':'TBC','12:20':'TBC','12:30':'4:30 pm','4 pm':'4:30 pm'};
         if(el.matches('th')&&times[el.textContent.trim()])el.textContent=times[el.textContent.trim()];
         if(el.matches('td')&&el.textContent.trim()==='Morning tea')el.textContent='Afternoon break';
       });
